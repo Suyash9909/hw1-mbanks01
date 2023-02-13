@@ -81,7 +81,7 @@ def list_2D():
 
     # Collect the items in the last column of matrix A using list comprehension and assign it to a new variable last_column.
 
-    last_column = A[-1]
+    last_column = [row[2] for row in A]
 
     # Get the item at the last row and last column of A.
 
@@ -89,7 +89,7 @@ def list_2D():
 
     # Get the item at row 2 and column 1 of A.
 
-    b = [1][0]
+    b = A[1][0]
 
 
     return A,last_column, a, b
